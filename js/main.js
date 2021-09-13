@@ -166,7 +166,7 @@
 
       $('.slider-owl').owlCarousel({
       items: 2,
-      loop: false,
+      loop: true,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
       margin: 20,
@@ -182,12 +182,18 @@
       responsive : {
         0 : {
           items: 1,
+            touchDrag  : true,
+            mouseDrag  : true,
         },
         600 : {
           items : 1,
+            touchDrag  : true,
+            mouseDrag  : true,
         },
         768 : {
           items : 1,
+             touchDrag  : true,
+            mouseDrag  : true,
         },
         992: {
           items :1
@@ -521,7 +527,7 @@ $('.adv-owl').owlCarousel({
 
   $(document).ready(function(){
             
-
+      
    $('.colorSwitch').click(function(){
      $('body').toggleClass("grayscale");
        $(this).find("i").toggleClass("fa-eye-slash fa-eye");
@@ -637,6 +643,7 @@ $('.adv-owl').owlCarousel({
       
       $(".preloader").fadeOut();
       
+    //$('[data-toggle="tooltip"]').tooltip();
 
 
   });
