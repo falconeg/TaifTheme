@@ -28,7 +28,7 @@
     <link rel="stylesheet" media="all" href="vendor/ytplayer/css/jquery.mb.YTPlayer.min.css" />
     <link rel="stylesheet" media="all" href="vendor/magnific/magnific-popup.css" />
     <link rel="stylesheet" media="all" href="vendor/slick/slick.css" />
-    
+
     <!-- Colorbox -->
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" media="all" href="css/update.css" />
@@ -72,12 +72,12 @@
 
 <body class="hidden-title gavias-pagebuilder layout-no-sidebars wide frontpage node--type-page">
 
- <div class="preloader">
-            <div class="loading">
-                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-            </div>
-        </div><!-- /.preloader -->
-    
+    <div class="preloader">
+        <div class="loading">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div><!-- /.preloader -->
+
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
         <div class="gva-body-wrapper">
             <div class="body-page gva-body-page">
@@ -99,6 +99,10 @@
                                 </a>
                                 <span class="sp"> | </span>
 
+                                <a href="#voiceCmdsModal" title="الأوامر الصوتية">
+                                    <i class="fas fa-microphone-alt"></i>
+                                    &nbsp; الأوامر الصوتية
+                                </a>
                                 <a href="#!" title="ألوان خاصة" class="colorSwitch">
                                     <i class="fas fa-eye-slash"></i>
                                     &nbsp; ألوان خاصة
@@ -117,7 +121,7 @@
                                         <input type="button" value="ابحث" onclick="javascript:searchSite();" title="اضغط للبحث">
                                     </span>
                                 </span>
-                                <a id="langlink" href="" title="English">EN</a>
+                                <a id="langlink" href="/en" title="English">EN</a>
                                 <span class="datetime">
                                     <i class="far fa-calendar-alt"></i>
                                     &nbsp; <span></span><span>الأربعاء 01/02/1443</span> - <span id="currentTime">4:42 م</span>
@@ -178,7 +182,7 @@
 
                                                                                         <ul class="menu sub-menu">
                                                                                             <li class="menu-item">
-                                                                                                <a href="#">نبذة عن الطائف</a>
+                                                                                                <a href="#"> الطائف</a>
                                                                                             </li><!-- /.nav-item -->
                                                                                             <li class="menu-item">
                                                                                                 <a href="#">الرؤية المستقبلية</a>
@@ -306,13 +310,13 @@
                                                                                                         <a href="#"> خدمة تزويد الجهات الحكومية بمسميات الشوارع والأحياء والخرائط</a>
                                                                                                     </li><!-- /.nav-item -->
                                                                                                     <li class="menu-item">
-                                                                                                        <a href="#">استبيان عن الخدمات الالكترونية</a>
+                                                                                                        <a href="#">إستبيان عن الخدمات الإلكترونية</a>
                                                                                                     </li><!-- /.nav-item -->
                                                                                                     <li class="menu-item">
-                                                                                                        <a href="#">استبيان آراء المستفيدين من الخدمات الإلكترونية</a>
+                                                                                                        <a href="#">إستبيان آراء المستفيدين من الخدمات الإلكترونية</a>
                                                                                                     </li><!-- /.nav-item -->
                                                                                                     <li class="menu-item">
-                                                                                                        <a href="#">استبيان رضا السكان عن الخدمات</a>
+                                                                                                        <a href="#">إستبيان رضا السكان عن الخدمات</a>
                                                                                                     </li><!-- /.nav-item -->
                                                                                                     <li class="menu-item">
                                                                                                         <a href="#">البيانات المفتوحة</a>
@@ -329,7 +333,7 @@
                                                                                         <a href="#"> المركز الإعلامي <span class="icaret nav-plus fas fa-chevron-down"></span> </a>
                                                                                         <ul class="menu sub-menu">
                                                                                             <li class="menu-item">
-                                                                                                <a href="news.html"> أخر الأخبار</a>
+                                                                                                <a href="#"> أخر الأخبار</a>
                                                                                             </li><!-- /.nav-item -->
                                                                                             <li class="menu-item">
                                                                                                 <a href="#">الملف الصحفي</a>
@@ -454,7 +458,7 @@
 
                                                                                         <ul class="menu sub-menu">
                                                                                             <li class="menu-item">
-                                                                                                <a href="#">معلومات الاتصال</a>
+                                                                                                <a href="#">معلومات الإتصال</a>
                                                                                             </li><!-- /.nav-item -->
                                                                                             <li class="menu-item">
                                                                                                 <a href="#">مواقع إدارات و بلديات
@@ -558,7 +562,7 @@
 
 
                 <div role="main" class="main main-page">
- <div class="clearfix"></div>
+                    <div class="clearfix"></div>
 
 
                     <div class="help gav-help-region">
@@ -576,7 +580,7 @@
                     <div class="clearfix"></div>
 
                     <div class="clearfix"></div>
-         
+
 
                     <div id="content" class="content content-full">
                         <div class="container-full container-bg">
@@ -605,16 +609,16 @@
                                                                 <div class="gavias-builder--content">
                                                                     <div class="slider-owl owl-carousel">
                                                                         <div class="item">
-                                                                            <img  alt="" src="images/gva-sliderlayer-upload/slider-1.jpg"/>                                                                            
+                                                                            <img alt="" src="images/gva-sliderlayer-upload/slider-1.jpg" />
                                                                         </div>
                                                                         <div class="item">
-                                                                            <img  alt="" src="images/gva-sliderlayer-upload/slider-2.jpg"/>                                                                            
+                                                                            <img alt="" src="images/gva-sliderlayer-upload/slider-2.jpg" />
                                                                         </div>
                                                                         <div class="item">
-                                                                            <img  alt="" src="images/gva-sliderlayer-upload/slider-3.jpg"/>                                                                            
+                                                                            <img alt="" src="images/gva-sliderlayer-upload/slider-3.jpg" />
                                                                         </div>
                                                                         <div class="item">
-                                                                            <img  alt="" src="images/gva-sliderlayer-upload/slider-4.jpg"/>                                                                            
+                                                                            <img alt="" src="images/gva-sliderlayer-upload/slider-4.jpg" />
                                                                         </div>
                                                                     </div>
                                                                     <div class="gbb-row-wrapper section row-first-level gbb-row bg-size-cover welComBg" style="background-image:url('images/gbb-uploads/bg/bg-1.jpg'); background-repeat:no-repeat; background-position:center top">
@@ -696,7 +700,7 @@
                                                                                                         </div>
 
                                                                                                         <h4 class="box-title">
-                                                                                                            <a class="link"> اعمال وإستثمار </a>
+                                                                                                            <a class="link"> أعمال وإستثمار </a>
                                                                                                         </h4>
                                                                                                     </div>
                                                                                                 </div>
@@ -828,7 +832,7 @@
                                                                                                         </div>
 
                                                                                                         <h4 class="box-title">
-                                                                                                            <a class="link">خدمة مرحباً </a>
+                                                                                                            <a class="link"> أخرى </a>
                                                                                                         </h4>
                                                                                                     </div>
                                                                                                 </div>
@@ -845,7 +849,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="gbb-row-wrapper section row-first-level  gbb-row bg-size-default" style="background-color:#fff; background-image:url('/drupal/linoor/images/gbb-uploads/bg/bg-shape.jpg'); background-repeat:repeat-y; background-position:right center" data-onepage-title="Image Content">
-                                                                        <div class="bb-inner default">
+                                                                        <div class="bb-inner default pb0">
                                                                             <div class="bb-container container">
                                                                                 <div class="row row-wrapper">
                                                                                     <div class="gsc-column col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
@@ -889,8 +893,9 @@
                                                                                                 <div class="widget gsc-heading  align-right style-1 padding-bottom-0" style="max-width: 800px;">
 
                                                                                                     <div class="heading-content clearfix">
-                                                                                                        <h2 class="title text-black wow fadeInUp" data-wow-delay="0.10s" >
-                                                                                                            <span>نبذة عن الطائف
+                                                                                                        <h2 class="title text-black wow fadeInUp" data-wow-delay="0.10s">
+                                                                                                            <span>
+نبذة عن  الطائف
                                                                                                             </span>
                                                                                                         </h2>
                                                                                                         <div class="title-desc text-gray  wow fadeInUp" data-wow-delay="0.20s">
@@ -909,7 +914,7 @@
                                                                                                             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                                                                                                                 <a href="#" class="wlcomItem  wow fadeInUp" data-wow-delay="0.30s">
                                                                                                                     <div class="imgCon"><img alt="" src="images/welcome1.jpg" /></div>
-                                                                                                                    <span>عن الامانة</span>
+                                                                                                                    <span>عن الأمانة</span>
                                                                                                                 </a></div>
                                                                                                             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                                                                                                                 <a href="#" class="wlcomItem wow fadeInUp" data-wow-delay="0.40s">
@@ -948,13 +953,207 @@
                                                                     </div>
 
 
+                                                                    
+                                                                                                                                        <div class="gbb-row-wrapper section row-first-level gbb-row bg-size-cover wow  fadeInUp" data-wow-delay="0.10s">
+                                                                        <div class="bb-inner default pt0">
+                                                                            <div class="bb-container container">
+                                                                                <div class="row row-wrapper">
+                                                                                    <div class="gsc-column col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                                        <div class="column-inner bg-size-cover">
+                                                                                            <div class="column-content-inner">
+                                                                                                <div class="widget gsc-heading  align-center style-1 ">
+
+                                                                                                    <div class="heading-content clearfix">
+                                                                                                        <h2 class="title text-black ">
+                                                                                                            <span>أخبار الأمانة</span>
+                                                                                                        </h2>
+                                                                                                    </div>
+
+
+                                                                                                </div>
+                                                                                                <div class="clearfix"></div>
+                                                                                                <div>
+                                                                                                    <div class="widget block clearfix gsc-block-view  gsc-block-drupal block-view title-align-right  text-dark remove-margin-off">
+                                                                                                        <div class="views-element-container  ">
+                                                                                                            <div class="post-style-grid post-slideset gva-view js-view-dom-id-f70528cdca3ccd0c9c5c3b45897db601466da5d1b91342ce49e125a27d797a5a">
+
+
+                                                                                                                <div class="owl-carousel init-carousel-owl" data-items="3" data-items_lg="3" data-items_md="2" data-items_sm="2" data-items_xs="1" data-loop="1" data-speed="1000" data-auto_play="1" data-auto_play_speed="1000" data-auto_play_timeout="5000" data-auto_play_hover="1" data-navigation="0" data-rewind_nav="0" data-pagination="0" data-mouse_drag="1" data-touch_drag="1">
+
+
+                                                                                                                    <div class="item">
+                                                                                                                        <div>
+                                                                                                                            <!-- Start Display article for teaser page -->
+
+                                                                                                                            <div class="post-block teaser-1 text-center">
+                                                                                                                                <div class="post-image">
+
+                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
+                                                                                                                                        <div class="item-image">
+                                                                                                                                            <a href="#"><img property="schema:image" src="images/styles/medium/public/articles/post-12.jpg" alt="linoor" typeof="foaf:Image" />
+
+                                                                                                                                            </a>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                                <div class="post-content">
+                                                                                                                                    <div class="post-meta">
+
+
+                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
+                                                                                                                                        <span class="post-created"> <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
+                                                                                                                                    </div>
+                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name">
+                                                                                                                                                أمير منطقة مكة المكرمة صاحب السمو الملكي الأمير خالد الفيصل يكرم امانة الطائف </span>
+                                                                                                                                        </a> </h3>
+                                                                                                                                    <div class="post-body">
+                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="item">
+                                                                                                                        <div>
+                                                                                                                            <!-- Start Display article for teaser page -->
+
+                                                                                                                            <div class="post-block teaser-1 text-center">
+                                                                                                                                <div class="post-image">
+
+                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
+                                                                                                                                        <div class="item-image">
+                                                                                                                                            <a href="details.html"><img property="schema:image" src="images/styles/medium/public/articles/post-11.jpg" alt="linoor" typeof="foaf:Image" />
+
+                                                                                                                                            </a>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                                <div class="post-content">
+                                                                                                                                    <div class="post-meta">
+
+
+                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
+                                                                                                                                        <span class="post-created"> <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
+                                                                                                                                    </div>
+                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name"> موظفاً بأمانة الطائف يواصلون أعمالهم في الحج </span>
+                                                                                                                                        </a> </h3>
+                                                                                                                                    <div class="post-body">
+                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="item">
+                                                                                                                        <div>
+                                                                                                                            <!-- Start Display article for teaser page -->
+
+                                                                                                                            <div class="post-block teaser-1 text-center">
+                                                                                                                                <div class="post-image">
+
+                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
+                                                                                                                                        <div class="item-image">
+                                                                                                                                            <a href="we-executed-best-civil-engineering-projects.htm"><img property="schema:image" src="images/styles/medium/public/articles/post-10.jpg" alt="linoor" typeof="foaf:Image" />
+
+                                                                                                                                            </a>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                                <div class="post-content">
+                                                                                                                                    <div class="post-meta">
+
+
+                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
+                                                                                                                                        <span class="post-created"> <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
+                                                                                                                                    </div>
+                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name"> موظفاً بأمانة الطائف يواصلون أعمالهم في الحج </span>
+                                                                                                                                        </a> </h3>
+                                                                                                                                    <div class="post-body">
+                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="item">
+                                                                                                                        <div>
+                                                                                                                            <!-- Start Display article for teaser page -->
+
+                                                                                                                            <div class="post-block teaser-1 text-center">
+                                                                                                                                <div class="post-image">
+
+                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
+                                                                                                                                        <div class="item-image">
+                                                                                                                                            <a href="we-design-industry-materials-innovation.htm"><img property="schema:image" src="images/styles/medium/public/articles/post-9.jpg" alt="linoor" typeof="foaf:Image" />
+
+                                                                                                                                            </a>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                                <div class="post-content">
+                                                                                                                                    <div class="post-meta">
+
+
+                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
+                                                                                                                                        <span class="post-created"> <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
+                                                                                                                                    </div>
+                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name">
+                                                                                                                                                طلاب وطالبات الطائف يمتثلون لتطبيق الأجراءات الأحترازية ممتثل عشان أحب الطائف</span>
+                                                                                                                                        </a> </h3>
+                                                                                                                                    <div class="post-body">
+                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                </div>
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+
+
+                                                                                                                </div>
+
+
+
+
+
+
+
+
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
 
                                                                     <div class="gbb-row-wrapper section row-first-level gbb-row servBlock" style="background-image:url('images/bg-3.jpg'); background-repeat:repeat-x; background-position:center top">
 
                                                                         <div class="mainTit">
                                                                             <div class="container">
                                                                                 <div class="d-flex align-items-center  wow fadeInUp" data-wow-delay="0.10s">
-                                                                                    <h2>الخدمات الالكترونيه </h2>
+                                                                                    <h2>الخدمات الإلكترونية </h2>
                                                                                     <a href="#" class="btn-theme btn-small "><i class="btn-curve"></i><span>مزيد الخدمات </span></a>
 
                                                                                 </div>
@@ -963,55 +1162,59 @@
                                                                         <div class="bb-inner remove_margin remove_padding remove_padding_col">
                                                                             <div class="bb-container container">
                                                                                 <div class=" wow fadeInUp" data-wow-delay="0.20s">
-                                                                                       <div class="serv-owl owl-carousel">
-                                                                                    <div class="item">
-                                                                                        <div class="imgCon">
-                                                                                            <img alt="" src="images/servIco1.png">
+                                                                                    <div class="serv-owl owl-carousel">
+
+                                                                                        <div class="item">
+                                                                                            <div class="imgCon">
+                                                                                                <img alt="" src="images/servIco6.png">
+                                                                                            </div>
+                                                                                            <p> الإستعلام عن منحة أرض </p>
                                                                                         </div>
-                                                                                        <p>الاستعلام عن معاملة برقم المعاملة</p>
-                                                                                    </div>
-                                                                                    <div class="item">
-                                                                                        <div class="imgCon">
-                                                                                            <img alt="" src="images/servIco2.png">
+                                                                                        <div class="item">
+                                                                                            <div class="imgCon">
+                                                                                                <img alt="" src="images/servIco5.png">
+                                                                                            </div>
+                                                                                            <p> الإستعلام عن المخالفات </p>
                                                                                         </div>
-                                                                                        <p> الاستعلام عن معاملة برقم الخطاب</p>
-                                                                                    </div>
-                                                                                    <div class="item">
-                                                                                        <div class="imgCon">
-                                                                                            <img alt="" src="images/servIco3.png">
+                                                                                        <div class="item">
+                                                                                            <div class="imgCon">
+                                                                                                <img alt="" src="images/servIco4.png">
+                                                                                            </div>
+                                                                                            <p> الإستعلام عن شهادة صحية</p>
                                                                                         </div>
-                                                                                        <p> الاستعلام عن فاتورة سداد برقم الفاتورة</p>
-                                                                                    </div>
-                                                                                    <div class="item">
-                                                                                        <div class="imgCon">
-                                                                                            <img alt="" src="images/servIco4.png">
+                                                                                        <div class="item">
+                                                                                            <div class="imgCon">
+                                                                                                <img alt="" src="images/servIco3.png">
+                                                                                            </div>
+                                                                                            <p> الإستعلام عن معاملة</p>
                                                                                         </div>
-                                                                                        <p> الاستعلام عن فاتورة سداد برقم الهوية</p>
-                                                                                    </div>
-                                                                                    <div class="item">
-                                                                                        <div class="imgCon">
-                                                                                            <img alt="" src="images/servIco5.png">
+                                                                                        <div class="item">
+                                                                                            <div class="imgCon">
+                                                                                                <img alt="" src="images/servIco2.png">
+                                                                                            </div>
+                                                                                            <p> الإستعلام عن فاتورة سداد </p>
                                                                                         </div>
-                                                                                        <p> الاستعلام عن رخصة محل برقم الرخصة</p>
-                                                                                    </div>
-                                                                                    <div class="item">
-                                                                                        <div class="imgCon">
-                                                                                            <img alt="" src="images/servIco6.png">
+                                                                                        <div class="item">
+                                                                                            <div class="imgCon">
+                                                                                                <img alt="" src="images/servIco1.png">
+                                                                                            </div>
+                                                                                            <p>الإستعلام عن رخصة محل </p>
                                                                                         </div>
-                                                                                        <p> الاستعلام عن رخصة محل برقم الهوية</p>
+
+
+
+
+
+
                                                                                     </div>
 
                                                                                 </div>
-
-                                                                                </div>
-                                                                             
-
-
-
-                                                                                <div class="row row-wrapper mb-5">
+                                                                                
+                                                                                <div class="blocksCon">
+                                                                                <div class="row row-wrapper m-0 ">
 
 
-                                                                                    <div class="gsc-column col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.30s">
+                                                                                    <div class="gsc-column  col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.30s">
                                                                                         <div class="column-inner bg-size-cover">
                                                                                             <div class="column-content-inner">
                                                                                                 <div class="column-content  ">
@@ -1072,7 +1275,7 @@
 
                                                                                     </div>
 
-                                                                                    <div class="gsc-column col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.40s">
+                                                                                    <div class="gsc-column  col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.40s">
                                                                                         <div class="column-inner bg-size-cover  ">
                                                                                             <div class="column-content-inner">
                                                                                                 <div class="widget gsc-heading  twitterB ">
@@ -1102,7 +1305,7 @@
                                                                                         <div class="column-inner bg-size-cover">
                                                                                             <div class="column-content-inner">
                                                                                                 <div class="column-content  ">
-                                                                                                    <h2 class="box-style">استطلاع رأي
+                                                                                                    <h2 class="box-style">إستطلاع رأي
                                                                                                         <span>
                                                                                                             يهمنا معرفة آرائكم باستمرار لنقدم الأفضل دائما
                                                                                                         </span>
@@ -1154,6 +1357,13 @@
                                                                                     </div>
 
                                                                                 </div>
+                                                                                
+                                                                                </div>
+
+
+
+
+                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1163,221 +1373,29 @@
                                                                     <div class="advSCon wow fadeInUp" data-wow-delay="0.20s">
                                                                         <div class=" container">
                                                                             <h2 class="tit2 ">اعلانات</h2>
-                                                                            <div >
-                                                                                   <div class="adv-owl owl-carousel">
-                                                                                <div class="item">
-                                                                                    <img alt="" src="images/adv11.jpg" />
-                                                                                </div>
-                                                                                <div class="item">
-                                                                                    <img alt="" src="images/adv222.jpg" />
-                                                                                </div>
-                                                                                <div class="item">
-                                                                                    <img alt="" src="images/adv333.jpg" />
-                                                                                </div>
-                                                                                <div class="item">
-                                                                                    <img alt="" src="images/adv555.jpg" />
-                                                                                </div>
-                                                                                <div class="item">
-                                                                                    <img alt="" src="images/adv66.jpg" />
-                                                                                </div>
-                                                                            </div>
-                                                                            </div>
-                                                                         
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="gbb-row-wrapper section row-first-level gbb-row bg-size-cover wow  fadeInUp" data-wow-delay="0.10s"  >
-                                                                        <div class="bb-inner default">
-                                                                            <div class="bb-container container">
-                                                                                <div class="row row-wrapper">
-                                                                                    <div class="gsc-column col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                                                        <div class="column-inner bg-size-cover">
-                                                                                            <div class="column-content-inner">
-                                                                                                <div class="widget gsc-heading  align-center style-1 ">
-
-                                                                                                    <div class="heading-content clearfix">
-                                                                                                        <h2 class="title text-black ">
-                                                                                                            <span>أخبار الأمانة</span>
-                                                                                                        </h2>
-                                                                                                    </div>
-
-
-                                                                                                </div>
-                                                                                                <div class="clearfix"></div>
-                                                                                                <div>
-                                                                                                    <div class="widget block clearfix gsc-block-view  gsc-block-drupal block-view title-align-right  text-dark remove-margin-off">
-                                                                                                        <div class="views-element-container  " >
-                                                                                                            <div class="post-style-grid post-slideset gva-view js-view-dom-id-f70528cdca3ccd0c9c5c3b45897db601466da5d1b91342ce49e125a27d797a5a">
-
-
-                                                                                                                <div class="owl-carousel init-carousel-owl" data-items="3" data-items_lg="3" data-items_md="2" data-items_sm="2" data-items_xs="1" data-loop="1" data-speed="1000" data-auto_play="1" data-auto_play_speed="1000" data-auto_play_timeout="5000" data-auto_play_hover="1" data-navigation="0" data-rewind_nav="0" data-pagination="0" data-mouse_drag="1" data-touch_drag="1">
-
-
-                                                                                                                    <div class="item">
-                                                                                                                        <div>
-                                                                                                                            <!-- Start Display article for teaser page -->
-
-                                                                                                                            <div class="post-block teaser-1 text-center">
-                                                                                                                                <div class="post-image">
-
-                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-                                                                                                                                        <div class="item-image">
-                                                                                                                                            <a href="#"><img property="schema:image" src="images/styles/medium/public/articles/post-12.jpg" alt="linoor" typeof="foaf:Image" />
-
-                                                                                                                                            </a>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                                <div class="post-content">
-                                                                                                                                    <div class="post-meta">
-
-
-                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
-                                                                                                                                        <span class="post-created">  <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
-                                                                                                                                    </div>
-                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name">
-                                                                                                                                                أمير منطقة مكة المكرمة صاحب السمو الملكي الأمير خالد الفيصل يكرم امانة الطائف </span>
-                                                                                                                                        </a> </h3>
-                                                                                                                                    <div class="post-body">
-                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                            </div>
-
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="item">
-                                                                                                                        <div>
-                                                                                                                            <!-- Start Display article for teaser page -->
-
-                                                                                                                            <div class="post-block teaser-1 text-center">
-                                                                                                                                <div class="post-image">
-
-                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-                                                                                                                                        <div class="item-image">
-                                                                                                                                            <a href="details.html"><img property="schema:image" src="images/styles/medium/public/articles/post-11.jpg" alt="linoor" typeof="foaf:Image" />
-
-                                                                                                                                            </a>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                                <div class="post-content">
-                                                                                                                                    <div class="post-meta">
-
-
-                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
-                                                                                                                                        <span class="post-created">  <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
-                                                                                                                                    </div>
-                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name"> موظفاً بأمانة الطائف يواصلون أعمالهم في الحج </span>
-                                                                                                                                        </a> </h3>
-                                                                                                                                    <div class="post-body">
-                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                            </div>
-
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="item">
-                                                                                                                        <div>
-                                                                                                                            <!-- Start Display article for teaser page -->
-
-                                                                                                                            <div class="post-block teaser-1 text-center">
-                                                                                                                                <div class="post-image">
-
-                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-                                                                                                                                        <div class="item-image">
-                                                                                                                                            <a href="we-executed-best-civil-engineering-projects.htm"><img property="schema:image" src="images/styles/medium/public/articles/post-10.jpg" alt="linoor" typeof="foaf:Image" />
-
-                                                                                                                                            </a>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                                <div class="post-content">
-                                                                                                                                    <div class="post-meta">
-
-
-                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
-                                                                                                                                        <span class="post-created">  <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
-                                                                                                                                    </div>
-                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name"> موظفاً بأمانة الطائف يواصلون أعمالهم في الحج </span>
-                                                                                                                                        </a> </h3>
-                                                                                                                                    <div class="post-body">
-                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                            </div>
-
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="item">
-                                                                                                                        <div>
-                                                                                                                            <!-- Start Display article for teaser page -->
-
-                                                                                                                            <div class="post-block teaser-1 text-center">
-                                                                                                                                <div class="post-image">
-
-                                                                                                                                    <div class="field field--name-field-image field--type-image field--label-hidden field__item">
-                                                                                                                                        <div class="item-image">
-                                                                                                                                            <a href="we-design-industry-materials-innovation.htm"><img property="schema:image" src="images/styles/medium/public/articles/post-9.jpg" alt="linoor" typeof="foaf:Image" />
-
-                                                                                                                                            </a>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                                <div class="post-content">
-                                                                                                                                    <div class="post-meta">
-
-
-                                                                                                                                        <span class="post-comment"> <i class="far fa-clock"></i> 12:55 صباحا </span>
-                                                                                                                                        <span class="post-created">  <i class="far fa-calendar-alt"></i> 21 ديسمبر 2021 </span>
-                                                                                                                                    </div>
-                                                                                                                                    <h3 class="post-title"> <a href="details.html" rel="bookmark"><span property="schema:name">
-                                                                                                                                                طلاب وطالبات الطائف يمتثلون لتطبيق الأجراءات الأحترازية ممتثل عشان أحب الطائف</span>
-                                                                                                                                        </a> </h3>
-                                                                                                                                    <div class="post-body">
-                                                                                                                                        <div property="schema:text" class="field field--name-body field--type-text-with-summary field--label-hidden field__item">طرحت أمانة الطائف 8 فرص استثمارية متنوعة في مدينة الطائف عبر بوابة فرص للاستثمار البلدي ضمن مبادرات وزارة الشؤون البلدية والقروية لتحسين ...
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-
-                                                                                                                                </div>
-                                                                                                                            </div>
-
-                                                                                                                        </div>
-                                                                                                                    </div>
-
-
-                                                                                                                </div>
-
-
-
-
-
-
-
-
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-
+                                                                            <div>
+                                                                                <div class="adv-owl owl-carousel">
+                                                                                    <div class="item">
+                                                                                        <img alt="" src="images/adv11.jpg" />
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <img alt="" src="images/adv222.jpg" />
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <img alt="" src="images/adv333.jpg" />
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <img alt="" src="images/adv555.jpg" />
+                                                                                    </div>
+                                                                                    <div class="item">
+                                                                                        <img alt="" src="images/adv66.jpg" />
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+
                                                                         </div>
                                                                     </div>
-                                                                    
+
 
                                                                 </div>
                                                             </div>
@@ -1404,115 +1422,115 @@
             </div>
 
             <div class="imp_lnks bg-gray-black">
-                <div class="container wow fadeInUp" data-wow-delay="0.20s" >
-                    <h2 >روابط تهمك</h2>
-                    <div >
+                <div class="container wow fadeInUp" data-wow-delay="0.20s">
+                    <h2>روابط تهمك</h2>
+                    <div>
                         <div class="owl-carousel init-carousel-owl" data-items="5" data-items_lg="5" data-items_md="4" data-items_sm="3" data-items_xs="2" data-loop="1" data-speed="200" data-auto_play="1" data-auto_play_speed="1000" data-auto_play_timeout="3000" data-auto_play_hover="1" data-navigation="1" data-rewind_nav="0" data-pagination="0" data-mouse_drag="1" data-touch_drag="1">
 
 
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-1.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-1.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-2.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-2.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-3.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-3.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-4.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-4.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-5.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-5.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-6.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-6.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-7.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-7.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="gva-carousel-5 text-center">
-                                <div class="views-field views-field-field-image">
-                                    <div class="field-content">
-                                        <div class="item-image">
-                                            <img src="images/banner/brand-dark-6.png" alt="alt" typeof="foaf:Image" />
+                            <div class="item">
+                                <div class="gva-carousel-5 text-center">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <div class="item-image">
+                                                <img src="images/banner/brand-dark-6.png" alt="alt" typeof="foaf:Image" />
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+
+                        </div>
 
                     </div>
 
-                    </div>
 
-                    
                 </div>
 
 
@@ -1646,7 +1664,8 @@
                                     <div class="socials-footer wow fadeInUp" data-wow-delay="0.10s">
                                         <a href="index.html#"><i class="fab fa-facebook"></i></a>
                                         <a href="index.html#"><i class="fab fa-twitter"></i></a>
-                                        <a href="index.html#"><i class="fab fa-youtube"></i></a>
+                                        <a href="index.html#"><i class="fab fa-google"></i></a>
+                                        <a href="index.html#"><i class="fab fa-pinterest"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 text-center">
@@ -1708,6 +1727,7 @@
     <!-- Color box -->
     <script type="text/javascript" src="js/jquery.colorbox.js"></script>
 <script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "dec9f9a67c4225622c98a782cafe9842cf42700a9f85f8ccc565cd565b8b2b0c", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+
 
 
 </body>

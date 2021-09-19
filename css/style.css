@@ -9122,8 +9122,8 @@ ul[data-drupal-views-infinite-scroll-pager].pager {
 .gbb-row-wrapper {
   position: relative;
 }
-.row-first-level{background-size: 100%;}
-.servBlock{background-size: auto 412px;}
+.row-first-level{background-size: 100%;padding: 0 0 9px;}
+.servBlock{background-size: auto 412px;background-color: #e8e8e8;}
 .bg-size-default{}
 .gbb-row-wrapper .row-text-overlay {
   font-size: 50px;
@@ -18017,6 +18017,7 @@ body.path-services .body-page {
     height: 66px;
     max-width: none;
 }
+
 .rs-background-video-layer:after {
   content: "";
   background: url(../images/grid-slide.png) repeat rgba(0, 0, 0, 0.39);
@@ -18065,7 +18066,7 @@ body.grayscale {
 .serv-owl .owl-item.active:nth-child(6) .item{border:none}
 .serv-owl .item:hover .imgCon{border-color:#246a63}
 .serv-owl .imgCon{
-    border: 15px #7eac61 solid;
+    border: 15px #6b9156 solid;
     width: 118px;
     height: 118px;
     background: #fff;
@@ -18073,10 +18074,10 @@ body.grayscale {
     margin: 0 auto 15px;
     text-align: center;
     padding: 18px;
-     -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  -ms-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
 }
 .serv-owl .imgCon img{
     height: 100%;
@@ -18086,7 +18087,7 @@ body.grayscale {
     font-size: 16px;
     line-height: 23px;
 }
-.twitterB {background:#fff;border-radius:8px;padding: 40px 20px 10px;text-align:center;}
+.twitterB {background:#fff;border-radius:8px;padding: 40px 20px 21px;text-align:center;}
 .twitterB i.fa-twitter{
     color: #03a9f4;
     font-size: 40px;
@@ -18202,7 +18203,7 @@ color: #838383;
 }
 .mainTit{padding: 34px 0 10px;}
 .mainTit h2{
-    font-size: 26px;
+    font-size: 25px;
     color: #fff;
 }
 .mainTit a{margin-right:auto}
@@ -18219,7 +18220,7 @@ color: #838383;
 .footerLogosCon{
     text-align:left
 }
-.advSCon{background-color: #e8e8e8;padding: 30px 0 40px }
+.advSCon{background-color: #fff;padding: 30px 0 40px }
 .tit2{margin: 0 0 23px;text-align: center;font-size: 26px;}
 .video-inner .image-layer.non-overlay , .video-inner .image-layer.non-overlay img{
     -webkit-filter: grayscale(0) !important;
@@ -18297,6 +18298,9 @@ color: #838383;
 -----------------------*/
 .pt0{
     padding-top: 5px !important;
+}
+.pb0{
+    padding-bottom: 0 !important;
 }
 .preloader {
   position: fixed;
@@ -18602,7 +18606,24 @@ display: block;
     .post-social-icons > li.pinterest {
         background: #ce222b;
     }
-.postsmllImg{float:left;width: 425px;max-width:100%;margin:20px;margin-right: 45px;margin-left:0;}
+.postsmllImg{float:left;width: 425px;max-width:100%;margin:20px;margin-right: 45px;margin-left:0;border-radius: 8px;overflow: hidden;}
+.postsmllImg .owl-carousel .owl-nav > div.owl-prev,.postsmllImg .owl-carousel .owl-nav > div.owl-next{
+  background: #000000;
+  color: #fff !important;
+  font-size: 18px;
+  line-height: 23px;
+  top: 50%;
+  height: 36px;
+  width: 30px;
+  opacity: 1;
+}
+.postsmllImg .owl-carousel:hover .owl-nav > div.owl-prev, .postsmllImg .owl-carousel:hover .owl-nav > div.owl-next{opacity:1}
+.postsmllImg img{border-radius:0}
+.blocksCon{background-color: #fff;border-radius: 10px;margin: 0 0 34px;overflow: hidden;}
+.blocksCon >.row{margin: 0}
+
+.blocksCon .gsc-column{padding: 0}
+
 /*********************************/
 @media (max-width: 1400px) {
     .slider-owl .item{
